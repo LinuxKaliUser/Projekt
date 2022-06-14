@@ -1,0 +1,106 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  border: 1px solid black;
+  padding: 10px;
+  display: grid;
+
+  /* Breite der drei Spalten */
+
+  grid-template-columns: 20% 60% 20%;
+
+  /* Höhe der drei Zeilen*/
+
+  grid-template-rows: 100px 1fr 100px;
+
+  /* Alias für die Zellen */
+
+  grid-template-areas:
+    "header header header"
+    "nav main div"
+    "footer footer footer";
+}
+
+/* @media screen (min-width: 461px) and (min-height: 761px) {
+    body {
+      margin: 0;
+      position: relative;
+      border: 30px;
+      border-color: #153047;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif
+      font-size: 1PX;
+    }
+  }
+  @media screen (max-width: 460px) and (max-height: 760px) {
+    body {
+      flex-direction: column;
+      margin: 0;
+      position: baseline;
+      position: relative;
+      border: 30px;
+      border-color: #153047;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      font-size: 0.5PX;
+    }
+  } */
+nav,
+main {
+  border: 1px solid black;
+  padding: 10px;
+  box-sizing: border-box;
+  
+}
+div {
+  border: 1px solid black;
+  padding: 10px;
+  margin-right: 0;
+  font-size: 3rem;
+  box-sizing: border-box;
+  grid-area:div;
+
+}
+main{
+  border: 1px solid black;
+  padding: 10px;
+  box-sizing: border-box;
+  grid-area:main;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+nav{
+  border: 1px solid black;
+  padding: 10px;
+  box-sizing: border-box;
+  grid-area:nav;
+  font-size: 3rem;
+  box-sizing: border-box;
+}
+header h1 {
+  background-color: #00144a;
+  border-color: #153047;
+  text-align: center;
+  font: bold;
+  font-size: 4rem;
+  max-width: 1900px;
+  color: white;
+  box-sizing: border-box;
+  grid-area:header;
+}
+footer {
+  margin: 0;
+  grid-area: footer;
+  background-color: white;
+  border-color: #153047;
+  text-align: center;
+  font: bold;
+  font-size: 1rem;
+  max-width: 1900px;
+  color: white;
+  box-sizing: border-box;
+  
+}
