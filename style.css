@@ -1,0 +1,138 @@
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 1900px;
+  padding: 10px;
+  display: grid;
+
+  /* Breite der drei Spalten */
+
+  grid-template-columns: 20% 60% 20%;
+
+  /* Höhe der drei Zeilen*/
+
+  grid-template-rows: 200px 1fr 100px;
+
+  /* Alias für die Zellen */
+
+  grid-template-areas:
+    "header header header"
+    "nav main div"
+    "footer footer footer";
+}
+
+/*
+  }
+  @media screen (max-width: 460px) and (max-height: 760px) {
+    body {
+      flex-direction: column;
+      margin: 0;
+      position: baseline;
+      position: relative;
+      border: 30px;
+      border-color: #153047;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      font-size: 0.5PX;
+    }
+  } */
+
+header {
+  box-sizing: border-box;
+  grid-area: header;
+  background-color: #00144a;
+  border-color: #153047;
+  text-align: center ;
+  font: bold;
+  font-size: 4rem;
+  color: white;
+  
+}
+nav {
+  box-sizing: border-box;
+  grid-area: nav;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 3rem;
+}
+.navlist{
+  list-style-type:none ; 
+  border: 1px solid black;
+  background-color: #007C9F;
+  padding: 10px;
+  font-size: 3rem;
+ text-decoration:none ;
+  
+}
+#list2{
+  margin-left: 50px;
+}
+main {
+  box-sizing: border-box;
+  grid-area: main;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 2rem;
+  
+}
+article img {
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+}
+
+aside {
+  border: 1px solid black;
+  padding: 10px;
+  margin-right: 0;
+  font-size: 3rem;
+  box-sizing: border-box;
+  grid-area: div;
+}
+
+footer {
+  margin: 0;
+  grid-area: footer;
+  background-color: white;
+  border-color: #153047;
+  text-align: center;
+  font: bold;
+  font-size: 1rem;
+  max-width: 1900px;
+  color: white;
+  box-sizing: border-box;
+  grid-area: footer;
+}
+@media (max-width: 900px) {
+  
+  html {
+    font-size: 31.25%;
+  }
+  body {
+    padding: 10px;
+    display: grid;
+
+    /* Breite der drei Spalten */
+
+    grid-template-columns: 100%;
+
+    /* Höhe der drei Zeilen*/
+
+    grid-template-rows: 100px 100px 1fr 100px 100px;
+
+    /* Alias für die Zellen */
+
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      " div"
+      "footer";
+  }
+
+
+}

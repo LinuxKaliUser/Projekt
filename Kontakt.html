@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de" id="n">
+  <head>
+    <title>Kali und mein Fortschritt damit</title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Projektarbeit über Kali deren Möglichkeiten und mein Fortschritt damit"
+    />
+    <meta name="keywords" content="Kali, Startseite, Hobby" />
+    <meta name="author" content="Arunan Nagarajah" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="myscripts.js"></script> 
+  </head>
+  <body>
+  
+    <header>
+      <h1>Kontakt</h1>
+    </header>
+    <nav class="index">
+      <ul>
+        <li class="navlist">
+          <a class = "navlink" href="Index.html">
+            Kali Startseite
+          </a>
+        </li>
+        <li class="navlist">
+          <a class = "navlink" href="Terminal.html">
+            Terminal
+          </a>
+          <li class="navlist" id="list2"><a class = "navlink" href="Bash.html">
+            Bash
+          </a></li>          
+        </li>
+        <li class="navlist"><a class = "navlink" href="Mscfconsole.html">Mscfconsole</a></li>
+    </ul>
+  </nav>
+  <main>
+   
+    <form action="https://linuxkaliuser.github.io/Projekt/Kontakt.php" method="post">
+      <div>
+        <label>Anrede *</label><br />
+
+        <input type="radio" name="anrede" id="frau" value="Frau" required />
+        <label for="frau">Frau</label>
+
+        <input type="radio" name="anrede" id="herr" value="Herr" />
+        <label for="herr">Herr</label>
+
+        <input type="radio" name="anrede" id="anderes" value="Anderes" />
+        <label for="anderes">Anderes</label>
+      </div>
+
+      <div>
+        <label for="vorname">Vorname *</label><br />
+
+        <input
+          type="text"
+          id="vorname"
+          name="vorname"
+          minlength="1"
+          maxlength="30"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="nachname">Nachname *</label><br />
+
+        <input
+          type="text"
+          id="nachname"
+          name="nachname"
+          minlength="1"
+          maxlength="30"
+          required
+        />
+      </div>
+      <div>
+        <label>PLZ */Strasse *</label><br />
+
+        <input type="number" name="plz" min="1000" max="9999" required />
+
+        <input type="text" name="strasse" maxlength="100" required />
+      </div>
+
+      <div>
+        <label for="email">Email *</label><br />
+
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div>
+        <label for="nachricht">Nachricht</label><br />
+
+        <textarea
+          name="nachricht"
+          id="nachricht"
+          cols="10"
+          rows="10"
+          maxlength="100"
+        ></textarea>
+      </div>
+
+      <div>
+        <input type="submit" value="Senden" />
+
+        <input type="reset" value="Löschen" />
+      </div>
+    </form>
+
+      
+  </main>
+    <div><a href="https://www.youtube.com/watch?v=srvUrASNj0s">Tutorial</a></div>
+    <footer><h1>impressum</h1><p>autor: Arunan Nagarajah</p></footer>
+  </body>
+</html>
