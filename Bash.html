@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <title>Kali und mein Fortschritt damit</title>
+    <title>Bash</title>
     <meta charset="utf-8" />
     <meta
       name="description"
@@ -19,13 +19,40 @@
 
     </nav>
     <article>
+      <form >
+      <H1>Search</H1>
+     <input type="search" name= "search"placeholder="Search" size="14">
+      <input type="submit" onclick= "check(this.form)" value="Suchen" ><br></br><br></br>
+ 
+      </form>
+      <script>    
+      function check(form){
+        if(form.search.value=="kali"){
 
+          window.open("/index.html")  
+      
+        }else if(form.search.value=="Terminal"){
+     
+          window.open("/Terminal.html")  
+        }else if(form.search.value=="Bash"){
+     
+          window.open("/Bash.html")  
+        }else if(form.search.value=="Mscfconsole"){
+     
+          window.open("/Mscfconsole")  
+        }else if(form.search.value==""){
+     
+          window.open("/")  
+        }else {
+          alert ("Die Eingabe ist nicht richtig oder die gibt es nicht")
+          }
+      }
+    </script> 
     </article>
     <div>
 
     </div>
     <footer>
-        
-    </footer>
-  </body>
+      </footer>
+ </body>
 </html>

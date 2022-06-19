@@ -15,28 +15,74 @@
     <header>
       <h1>Kali Startseite</h1>
     </header>
-    <nav class="index">
-      <ul>
+    <nav>
+      <ul class="kali">
         <li class="navlist">
           <a class = "navlink" href="Index.html">
             Kali Startseite
           </a>
         </li>
-        <li class="navlist">
-          <a class = "navlink" href="Terminal.html">
-            Terminal
-          </a>
-          <li class="navlist" id="list2"><a class = "navlink" href="Bash.html">
-            Bash
-          </a></li>          
-        </li>
-        <li class="navlist"><a class = "navlink" href="Mscfconsole.html">Mscfconsole</a></li>
+          <ul class="hide1">
+            <li class="navlist">
+            <a class = "navlink" href="Terminal.html">
+              Terminal
+            </a>
+            </li>
+            <ul class="hide2">
+              <li class="navlist">
+                <a class = "navlink" href="Bash.html">
+                Bash
+              </a>
+            </ul> 
+            </li>
+            <li class="navlist" id="Mscfconsole">
+              <a class = "navlink" href="Mscfconsole.html">
+                Mscfconsole
+              </a>
+            </li>
+          </ul>                 
+      </ul>
+          
+
     </ul>
   </nav>
   <main><article>
     <img src="https://img.wonderhowto.com/img/78/81/63602999859789/0/kali-linux-2-0-internet-access-proble.w1456.jpg" alt="Terminal"><p>Kali ist ein Werkzeug, die man verwendet für ethische Hacken, weil es verschiedene Module von Linux hat, die sehr gut sind fürs Hacken. Wie zum Beispiel das Terminal, das mit Bash funktioniert, dazu gibt es Mscfconsole, das sucht an der Zielmaschine nach Exploit. Auf dem Terminal gibt es auch viele andere Module, die man mit Terminal einfach zugreifen kann, es gibt Module, die man immer braucht fürs ethisches Hacken, PING, NMAP, dieses Modul verwende ich, um verschiedene Informationen von der Zielmaschine zu finden. Zum Beispiele, welche Port von welchen Applikation oder Service verwendet wird. 
-  </p></article></main>
-    <aside><a href="https://www.youtube.com/watch?v=srvUrASNj0s">Tutorial</a></aside>
-    <footer><h1>impressum</h1><p>autor: Arunan Nagarajah</p></footer>
+  </p>
+  </article>
+  <article>
+    <form >
+      <H1>Suchen nach andere Webseiten</H1>
+      <input type="search" name= "Suchen"placeholder="Suche nach andere Webseite" size="25">
+      <input type="submit" onclick= "check(this.form)" value="Suchen" >
+    </form>
+    
+    <script>    
+      function check(form){
+        if(form.search.value=="kali"){
+
+          window.open("/Index.html")  
+    
+        }else if(form.search.value=="Terminal"){
+   
+          window.open("/Terminal.html")  
+        }else if(form.search.value=="Bash"){
+   
+          window.open("/Bash.html")  
+        }else if(form.search.value=="Mscfconsole"){
+   
+          window.open("/Mscfconsole")  
+        }else if(form.search.value==""){
+   
+          window.open("/")  
+        }else {
+          alert ("Die Eingabe ist nicht richtig oder die gibt es nicht")
+          }
+      }
+    </script> 
+  </article>
+  </main>
+    <aside><iframe width="72%" height="25%" src="https://www.youtube.com/embed/lZAoFs75_cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Tutorial for Kali</iframe></aside>
+    <footer><h1>Impressum</h1><p>autor: Arunan Nagarajah</p> <h2>Quellen:</h2><a href="https://www.youtube.com/embed/lZAoFs75_cs">Linux Tutorial Video</a></footer>
   </body>
 </html>

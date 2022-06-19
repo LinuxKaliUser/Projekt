@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap');
 html {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  max-width: 1900px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
   font-size: 62.5%;
 }
 
 body {
-  max-width: 1900px;
   padding: 10px;
   display: grid;
 
@@ -15,7 +16,7 @@ body {
 
   /* Höhe der drei Zeilen*/
 
-  grid-template-rows: 200px 1fr 100px;
+  grid-template-rows: 200px 1fr 200px;
 
   /* Alias für die Zellen */
 
@@ -42,7 +43,6 @@ body {
   } */
 
 header {
-  box-sizing: border-box;
   grid-area: header;
   background-color: #00144a;
   border-color: #153047;
@@ -52,60 +52,103 @@ header {
   color: white;
   
 }
+.kali:not(:hover) .hide1, 
+.kali:focus .hide1 ,
+.hide1:not(:hover) .hide2, 
+.hide1:focus .hide2 
+{
+  display: none;
+}
+
+
 nav {
-  box-sizing: border-box;
   grid-area: nav;
-  border: 1px solid black;
+  border: 1px solid #000000;
+  background-color: #153047;
   padding: 10px;
   font-size: 3rem;
+
 }
 .navlist{
-  list-style-type:none ; 
-  border: 1px solid black;
+  border: 1px solid #000000;
   background-color: #007C9F;
   padding: 10px;
-  font-size: 3rem;
- text-decoration:none ;
+  list-style-type:none ;
+ 
   
 }
-#list2{
-  margin-left: 50px;
-}
+.navlink{
+  color: #153047;
+  text-decoration-line: none ;
+}:fi
 main {
-  box-sizing: border-box;
   grid-area: main;
-  border: 1px solid black;
+  border: 1px solid #000000;
   padding: 10px;
   font-size: 2rem;
   
 }
 article img {
-  margin: 0 auto;
+  margin: 0 ;
   width: 50%;
   height: 50%;
 }
 
 aside {
-  border: 1px solid black;
+  grid-area: div;
+  border: 1px solid #000000;
+  background-color: #153047;
   padding: 10px;
   margin-right: 0;
   font-size: 3rem;
-  box-sizing: border-box;
-  grid-area: div;
+  
 }
 
 footer {
+  grid-area: footer;
   margin: 0;
-  grid-area: footer;
-  background-color: white;
-  border-color: #153047;
-  text-align: center;
-  font: bold;
+  border: 1px solid #000000;
   font-size: 1rem;
-  max-width: 1900px;
-  color: white;
-  box-sizing: border-box;
-  grid-area: footer;
+  color: #FF0000;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  
+  html {
+    font-size: 40.5%;
+  }
+  body {
+   
+    display: grid;
+
+    /* Breite der drei Spalten */
+
+    grid-template-columns: 80% 20%;
+
+    /* Höhe der drei Zeilen*/
+
+    grid-template-rows: 150px 100px 1fr 100px 100px;
+
+    /* Alias für die Zellen */
+
+    grid-template-areas:
+      "header header"
+      "nav nav"
+      "main div"
+      "footer footer";
+      padding: 0px;
+    }
+  nav{
+    border: none;
+  background-color: #153047; 
+  }
+  nav ul{
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: nowrap;   
+    justify-content: space-between
+
+  }
 }
 @media (max-width: 900px) {
   
@@ -113,6 +156,7 @@ footer {
     font-size: 31.25%;
   }
   body {
+    min-width: 420px;
     padding: 10px;
     display: grid;
 
@@ -133,6 +177,32 @@ footer {
       " div"
       "footer";
   }
+  nav{
+    border: none;
+    background-color: #153047; 
+    box-sizing: 200px;
+  }
+  nav ul{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    padding: 0;   
+    justify-content: space-between;
+  
+
+  }.kali:not(:hover) .hide1, 
+  .kali:focus .hide1 ,
+  .hide1:not(:hover) .hide2, 
+  .hide1:focus .hide2 
+  {
+    display: contents;
+  }
+  
+   aside iframe{
+    width: 15%;
+    height: 72%;
+  }
+ 
 
 
 }
