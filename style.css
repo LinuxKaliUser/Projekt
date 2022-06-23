@@ -2,7 +2,7 @@
 html {
   max-width: 1900px;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   font-size: 62.5%;
 }
 
@@ -54,8 +54,8 @@ header {
 }
 .kali:not(:hover) .hide1, 
 .kali:focus .hide1 ,
-.hide1:not(:hover) .hide2, 
-.hide1:focus .hide2 
+.navlist2:not(:hover) .hide2, 
+.navilist2:focus .hide2 
 {
   display: none;
 }
@@ -69,7 +69,7 @@ nav {
   font-size: 3rem;
 
 }
-.navlist{
+.navlist1{
   border: 1px solid #000000;
   background-color: #007C9F;
   padding: 10px;

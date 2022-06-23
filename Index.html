@@ -17,34 +17,31 @@
     </header>
     <nav>
       <ul class="kali">
-        <li class="navlist">
+        <li class="navlist1">
           <a class = "navlink" href="Index.html">
             Kali Startseite
           </a>
-        </li>
           <ul class="hide1">
-            <li class="navlist">
+            <li class="navlist2">
             <a class = "navlink" href="Terminal.html">
               Terminal
             </a>
-            </li>
             <ul class="hide2">
-              <li class="navlist">
+              <li class="navlist3">
                 <a class = "navlink" href="Bash.html">
                 Bash
               </a>
-            </ul> 
+            </ul>   
             </li>
-            <li class="navlist" id="Mscfconsole">
+            </li>
+            <li class="navlist4" id="Mscfconsole">
               <a class = "navlink" href="Mscfconsole.html">
                 Mscfconsole
               </a>
             </li>
-          </ul>                 
+           </ul>                  
+        </li>
       </ul>
-          
-
-    </ul>
   </nav>
   <main><article>
     <img src="https://img.wonderhowto.com/img/78/81/63602999859789/0/kali-linux-2-0-internet-access-proble.w1456.jpg" alt="Terminal"><p>Kali ist ein Werkzeug, die man verwendet für ethische Hacken, weil es verschiedene Module von Linux hat, die sehr gut sind fürs Hacken. Wie zum Beispiel das Terminal, das mit Bash funktioniert, dazu gibt es Mscfconsole, das sucht an der Zielmaschine nach Exploit. Auf dem Terminal gibt es auch viele andere Module, die man mit Terminal einfach zugreifen kann, es gibt Module, die man immer braucht fürs ethisches Hacken, PING, NMAP, dieses Modul verwende ich, um verschiedene Informationen von der Zielmaschine zu finden. Zum Beispiele, welche Port von welchen Applikation oder Service verwendet wird. 
@@ -54,27 +51,23 @@
     <form >
       <H1>Suchen nach andere Webseiten</H1>
       <input type="search" name= "Suchen"placeholder="Suche nach andere Webseite" size="25">
-      <input type="submit" onclick= "check(this.form)" value="Suchen" >
+      <input type="submit" onclick="check(this.form)" value="Suchen" >
     </form>
     
     <script>    
       function check(form){
-        if(form.search.value=="kali"){
-
-          window.open("/Index.html")  
+        if(form.Suchen.value == "kali"){
+          window.open("https://linuxkaliuser.github.io/Projekt/Index.html", '_blank'," witdh=400,height=400 ,top=400,left=400")  
     
-        }else if(form.search.value=="Terminal"){
+        }else if(form.Suchen.value=="terminal"){
    
-          window.open("/Terminal.html")  
-        }else if(form.search.value=="Bash"){
+          window.open("https://linuxkaliuser.github.io/Projekt/Terminal.html")  
+        }else if(form.search.value=="bash"){
    
-          window.open("/Bash.html")  
-        }else if(form.search.value=="Mscfconsole"){
+          window.open("https://linuxkaliuser.github.io/Projekt/Bash.html")  
+        }else if(form.Suchen.value=="mscfconsole"){
    
-          window.open("/Mscfconsole")  
-        }else if(form.search.value==""){
-   
-          window.open("/")  
+          window.open("https://linuxkaliuser.github.io/Projekt/Mscfconsole")  
         }else {
           alert ("Die Eingabe ist nicht richtig oder die gibt es nicht")
           }
