@@ -1,81 +1,113 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <title>Kali und mein Fortschritt damit</title>
-    <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Projektarbeit über Kali deren Möglichkeiten und mein Fortschritt damit"
-    />
-    <meta name="keywords" content="Kali, Startseite, Hobby" />
-    <meta name="author" content="Arunan Nagarajah" />
-    <link href="style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header>
-      <h1>Kali Startseite</h1>
-    </header>
-    <nav>
-      <ul class="kali">
-        <li class="navlist1">
-          <a class = "navlink" href="Index.html">
-            Kali Startseite
-          </a>
-          <ul class="hide1">
-            <li class="navlist2">
-            <a class = "navlink" href="Terminal.html">
+
+<head>
+  <title>Kali und mein Fortschritt damit</title>
+  <meta charset="utf-8" />
+  <meta name="description" content="Projektarbeit über Kali deren Möglichkeiten und mein Fortschritt damit" />
+  <meta name="keywords" content="Kali, Startseite, Hobby" />
+  <meta name="author" content="Arunan Nagarajah" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1>Kali Startseite</h1>
+  </header>
+  <nav>
+    <ul class="kali">
+      <li class="navlist1">
+        <a class="navlink" href="Index.html">
+          Kali Startseite
+        </a>
+        <ul class="hide1">
+          <li class="navlist2">
+            <a class="navlink" href="Terminal.html">
               Terminal
             </a>
             <ul class="hide2">
               <li class="navlist3">
-                <a class = "navlink" href="Bash.html">
-                Bash
-              </a>
-            </ul>   
-            </li>
-            </li>
-            <li class="navlist4" id="Mscfconsole">
-              <a class = "navlink" href="Mscfconsole.html">
-                Mscfconsole
-              </a>
-            </li>
-           </ul>                  
-        </li>
-      </ul>
+                <a class="navlink" href="Bash.html">
+                  Bash
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="hide1" >
+          <li class="navlist4" id="Mscfconsole">
+            <a class="navlink" href="Mscfconsole.html">
+              Mscfconsole
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </nav>
-  <main><article>
-    <img src="https://img.wonderhowto.com/img/78/81/63602999859789/0/kali-linux-2-0-internet-access-proble.w1456.jpg" alt="Terminal"><p>Kali ist ein Werkzeug, die man verwendet für ethische Hacken, weil es verschiedene Module von Linux hat, die sehr gut sind fürs Hacken. Wie zum Beispiel das Terminal, das mit Bash funktioniert, dazu gibt es Mscfconsole, das sucht an der Zielmaschine nach Exploit. Auf dem Terminal gibt es auch viele andere Module, die man mit Terminal einfach zugreifen kann, es gibt Module, die man immer braucht fürs ethisches Hacken, PING, NMAP, dieses Modul verwende ich, um verschiedene Informationen von der Zielmaschine zu finden. Zum Beispiele, welche Port von welchen Applikation oder Service verwendet wird. 
-  </p>
-  </article>
-  <article>
-    <form >
-      <H1>Suchen nach andere Webseiten</H1>
-      <input type="search" name= "Suchen"placeholder="Suche nach andere Webseite" size="25">
-      <input type="submit" onclick="check(this.form)" value="Suchen" >
-    </form>
-    
-    <script>    
-      function check(form){
-        if(form.Suchen.value == "kali"){
-          window.open("https://linuxkaliuser.github.io/Projekt/Index.html", '_blank'," witdh=400,height=400 ,top=400,left=400")  
-    
-        }else if(form.Suchen.value=="terminal"){
-   
-          window.open("https://linuxkaliuser.github.io/Projekt/Terminal.html")  
-        }else if(form.search.value=="bash"){
-   
-          window.open("https://linuxkaliuser.github.io/Projekt/Bash.html")  
-        }else if(form.Suchen.value=="mscfconsole"){
-   
-          window.open("https://linuxkaliuser.github.io/Projekt/Mscfconsole")  
-        }else {
-          alert ("Die Eingabe ist nicht richtig oder die gibt es nicht")
+  <main>
+    <div>
+      <img src="https://img.wonderhowto.com/img/78/81/63602999859789/0/kali-linux-2-0-internet-access-proble.w1456.jpg"
+        alt="Terminal">
+      <p>Kali ist ein Werkzeug, die man verwendet fürs ethische Hacken, weil es verschiedene Module von Linux hat, die
+        sehr geeignet sind fürs Hacken. Wie zum Beispiel das Terminal, das mit Bash funktioniert, dazu kann man im
+        Terminal verschieden Module aufrufen wie das Msfconsole, das sucht an der Zielmaschine nach Exploit, also nach
+        Schwachstellen. Auf dem Terminal gibt noch andere Module, die man nur mit dem Terminal zugreifen kann, wie zum
+        Beispiel PING, NMAP, dieses Modul verwende ich, um verschiedene Informationen an der Zielmaschine zu finden, zum
+        Beispiele, welche Port in welche Applikation oder Service verwendet wird in der Zielmaschine.
+        <br><br>
+        Jetzt erzähle ich mal, wie ich normalerweise vorhergehen würde. Ich benützte eine spezielle
+        Webseite(<em>HackTheBox</em>), wo man verschiedene Zielmaschinen aussuchen kann, um sie zu hacken. Dafür muss
+        man, aber
+        ein VPN benutzen, um darauf hacken zu können und im gleiche Netzwerk zu sein, wie die Zielmaschine. Nachdem
+        versuche ich die Zielmaschine zu pingen, um zu sehen, ob die IP, die die Webseite mir voran schon gibt,
+        funktioniert. Nachdem versuche ich Information aus der Zielmaschine herauszufinden, indem ich NMAP benutze, mit
+        der IP in Verbindung, kann ich verschiedene Ports und deren laufende Applikationen herausfinden. Je nach
+        Applikation oder Information, die ich herausfinde, handle ich entsprechend. Danach verwende ich meistens
+        Msfconsole, um genauer die Exploits zu verstehen und wie ich sie verwenden kann.
+        <br><br>
+        So handle ich meistens, wenn ich versuche eine Zielmaschine zu hacken, dazu gehört natürlich auch viel googeln
+        und dazuzulernen. Mithilfe des Hackens habe ich ein viel grösseres Verständnis von IT-Netzwerke, OSI Model etc.
+        Kali dazu basiert auf Linux, einer der sichersten, stabilsten Betriebssysteme, die es gibt.
+      </p>
+    </div>
+    <section>
+      <form>
+        <H2>Suchen nach andere Webseiten</H2>
+        <input type="search" name="Suchen" placeholder="Suche nach andere Webseite" size="25">
+        <input type="submit" onclick="check(this.form)" value="Suchen">
+      </form>
+
+      <script>
+        function check(form) {
+          if (form.Suchen.value == "kali") {
+            window.open("https://linuxkaliuser.github.io/Projekt/Index.html", '_blank', " witdh=400,height=400 ,top=400,left=400")
+
+          } else if (form.Suchen.value == "terminal") {
+
+            window.open("https://linuxkaliuser.github.io/Projekt/Terminal.html")
+          } else if (form.search.value == "bash") {
+
+            window.open("https://linuxkaliuser.github.io/Projekt/Bash.html")
+          } else if (form.Suchen.value == "mscfconsole") {
+
+            window.open("https://linuxkaliuser.github.io/Projekt/Mscfconsole")
+          } else {
+            alert("Die Eingabe ist nicht richtig oder die gibt es nicht")
           }
-      }
-    </script> 
-  </article>
+        }
+      </script>
+    </section>
   </main>
-    <aside><iframe width="72%" height="25%" src="https://www.youtube.com/embed/lZAoFs75_cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Tutorial for Kali</iframe></aside>
-    <footer><h1>Impressum</h1><p>autor: Arunan Nagarajah</p> <h2>Quellen:</h2><a href="https://www.youtube.com/embed/lZAoFs75_cs">Linux Tutorial Video</a></footer>
-  </body>
+  <aside>
+    <iframe src="https://www.youtube.com/embed/lZAoFs75_cs" title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </aside>
+  <footer>
+    <h3>Impressum</h3>
+    <p>autor: Arunan Nagarajah</p>
+    <h4>Quellen:</h4><a href="https://www.youtube.com/embed/lZAoFs75_cs">Linux Tutorial Video</a>
+  </footer>
+</body>
+
 </html>

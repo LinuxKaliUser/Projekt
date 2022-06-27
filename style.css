@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap');
 html {
   max-width: 1900px;
+  min-width: 450px;
   box-sizing: border-box;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 62.5%;
 }
 
@@ -12,11 +13,11 @@ body {
 
   /* Breite der drei Spalten */
 
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 15% 70% 15%;
 
   /* Höhe der drei Zeilen*/
 
-  grid-template-rows: 200px 1fr 200px;
+  grid-template-rows: 200px 1fr 100px;
 
   /* Alias für die Zellen */
 
@@ -74,26 +75,29 @@ nav {
   background-color: #007C9F;
   padding: 10px;
   list-style-type:none ;
- 
-  
 }
+    
 .navlink{
   color: #153047;
   text-decoration-line: none ;
-}:fi
+}
 main {
   grid-area: main;
   border: 1px solid #000000;
+  background-color: #F5F5F5;
   padding: 10px;
   font-size: 2rem;
+  text-align: center;
   
+}main div img{
+  height: 20%;
+  width: 20%;
 }
 article img {
-  margin: 0 ;
+  float: none;
   width: 50%;
   height: 50%;
 }
-
 aside {
   grid-area: div;
   border: 1px solid #000000;
@@ -102,6 +106,10 @@ aside {
   margin-right: 0;
   font-size: 3rem;
   
+}
+aside iframe{
+    height: 15%;
+    width: 75%;
 }
 
 footer {
@@ -138,26 +146,41 @@ footer {
       "footer footer";
       padding: 0px;
     }
+    .kali:not(:hover) .hide1, 
+    .kali:focus .hide1 ,
+    .navlist2:not(:hover) .hide2, 
+    .navilist2:focus .hide2 {
+      display: block;
+    }
   nav{
     border: none;
-  background-color: #153047; 
+    margin:0;
+    padding:0;
+    background-color: #153047; 
   }
-  nav ul{
-    display: flex; 
-    flex-direction: row; 
-    flex-wrap: nowrap;   
-    justify-content: space-between
+  .kali{
+    margin-left:25%;
+    padding:0;
+    list-style-type:none;
+    float:right;
+    position:absolute;
+  }
+  .hide1, .hide2{
+    margin-left:10px;
+    padding:0;
+    list-style-type:none;
+    float:right;
+    position:relative;
+    }
 
-  }
-}
-@media (max-width: 900px) {
+  
+}@media (max-width: 900px) {
   
   html {
     font-size: 31.25%;
   }
   body {
-    min-width: 420px;
-    padding: 10px;
+    padding: 0;
     display: grid;
 
     /* Breite der drei Spalten */
@@ -177,27 +200,25 @@ footer {
       " div"
       "footer";
   }
-  nav{
-    border: none;
-    background-color: #153047; 
-    box-sizing: 200px;
-  }
-  nav ul{
-    display: flex;
-    flex-direction: row; 
-    flex-wrap: nowrap;
-    padding: 0;   
-    justify-content: space-between;
-  
-
-  }.kali:not(:hover) .hide1, 
+  .kali:not(:hover) .hide1, 
   .kali:focus .hide1 ,
   .hide1:not(:hover) .hide2, 
   .hide1:focus .hide2 
   {
-    display: contents;
+    display: block;
   }
-  
+
+  .kali{
+    margin-left:10%;
+    padding:0;
+    list-style-type:none;
+    float:right;
+    position:absolute;
+  }
+  .hide1, .hide2{
+    margin-left:5px;
+    }
+
    aside iframe{
     width: 15%;
     height: 72%;
