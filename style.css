@@ -118,11 +118,12 @@ footer {
   color: #ff0000;
 }
 .impressum {
-  float: inline-start;
+  float: left;
 }
 .quelle {
-  float: inline-end;
+  float: right;
 }
+
 .quelle a {
   padding: 15px;
 }
